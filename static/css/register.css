@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("Login.jpeg");
+    background-size: 80%;
+    background-position: left 120% top 15%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+.leftCard{
+    width: 40vw;
+    height: 75vh;
+    background-color: black;
+    background-image: url("LoginPanel.jpg");
+    background-size: 95%;
+    background-position: 10% 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0em 2em 2em 0em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease-out;
+}
+
+.leftCard h1 , .leftCard h2{
+    margin-bottom: 4em;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+    height: 75vh;
+    border-radius: 2em;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form h2{
+    margin-top: -1.5em;
+    margin-bottom: 2em;
+    font-weight: 600;
+}
+
+form .child{
+    width: 90%;
+    height: 70%;
+    padding: 0.8em 1.6em;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.child div{
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.child div:nth-of-type(1),.child div:nth-of-type(2){
+    position: relative;
+}
+
+.child div:nth-of-type(2) svg{
+    position: absolute;
+    top: -2em;
+    left: 2em;
+    cursor: pointer;
+}
+
+.child div span{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    height: 0.5em;
+    width: 14em;
+    padding: 1em 2em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.child div span:hover{
+    background-color: black;
+    color: white;
+}
+
+input{
+    height: 2em;
+    width: 15em;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    color: black;
+    /* box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3); */
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus{
+    background-color: white;
+    /* box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3); */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.errShow{
+    width: 14em;
+    height: 0.5em;
+    background-color: red;
+    color: white;
+    padding: 1em 2em;
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25em;
+    left: 7.3em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

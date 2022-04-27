@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("Login.jpeg");
+    background-size: 80%;
+    background-position: left 120% top 15%;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+section{
+    width: 40vw;
+    height: 75vh;
+    background-color: black;
+    background-image: url("LoginPanel.jpg");
+    background-attachment: fixed;
+    background-size: 35%;
+    background-position: 10% 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 2em 0em 0em 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1{
+    margin-bottom: 1.5em;
+}
+
+section h2{
+    margin-bottom: 4em;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+    height: 75vh;
+    border-radius: 0em 2em 2em 0em;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 1px 25px 0px rgba(0, 0, 0, 0.3);
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form h2{
+    margin-top: -1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+form span{
+    margin-bottom: 1em;
+    padding: 1em 2em;
+    color: red;
+    opacity: 1;
+}
+
+input{
+    height: 2em;
+    width: 18em;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    background-color: white;
+    color: black;
+    /* box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3); */
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-family: 'Comfortaa', cursive;
+}
+
+input::placeholder{
+    color: black;
+}
+
+input:focus{
+    background-color: white;
+    /* box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.3); */
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+a:nth-of-type(1), a:nth-of-type(3){
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: 10em;
+    font-size: 0.9em;
+}
+
+a:nth-of-type(3){
+    margin-top: 1.5em;
+}
+
+a:nth-of-type(2){
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    height: 0.5em;
+    width: 14em;
+    padding: 1em 2em;
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+a:nth-of-type(2):hover{
+    background-color: black;
+    color: white;
+}

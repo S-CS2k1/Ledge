@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+
+.nb{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #303a52;
+    color: #e2f3f5;
+    width: 100vw;
+    height: 9vh;
+    font-family: 'Comfortaa', cursive;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    scroll-snap-align: start;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+.nbd1{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.nbd1 span{
+    padding: 0.25em 0.5em;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.nbd2{
+    align-self: flex-end;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: clip-path 0.5s ease-in;
+}
+
+.nbd2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nbd2 li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 300;
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 100%;
+}
+
+.nbd2 li:hover{
+    background-color: #0e153a;
+    color: #e2f3f5;
+}

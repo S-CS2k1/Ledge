@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>LEDGE</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nb">
+            <div class="nbd1">
+                <span style="margin-left: 2em;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                    </svg>
+                    LEDGE
+                </span>
+            </div>
+            <div class="nbd2">
+                <ul>
+                    <li>Home</li>
+                    <li id="ledge">Ledge</li>
+                    <li class="dropdown">Add</li>
+                    <% if(login) { %>
+                        <li>Hi <%= user.Fname %> </li>
+                    <% } else { %>
+                        <li> <a href="/login">login</a></li>
+                    <% } %> 
+                </ul>
+                <ul class="drop">
+                    <li><a href="">Chain</a></li>
+                    <li><a href="">Block</a></li>
+                </ul>
+                <% if(login) { %> 
+                    <ul class="account">
+                        <li><a href="/edit/<%= user._id%>">Profile</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>
+                <% } %> 
+            </div>
+        </nav>
+
+
+        <div class="home">
+            <div class="hs1">
+                <span>WELCOME to LEDGE.com</span>
+                <br>
+                <span style="font-weight: 300; font-size: 0.9em; text-align: center; ">Your personal data storing app</span> <br>
+            </div>
+            <div class="hs2">
+                Get info 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="info">
+            <p class="infop">
+                A Ledge helps you to maintain the transactions using blockchain technologies, where in your each transaction has been connected to each other
+                using cryptographycal methods.
+            </p>
+            <div class="infod">
+                <span>Create your own ledger now,</span>
+                <span>
+                    Start
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <section class="conaitner">
+        <div class="create">
+            <div class="new">
+                <span>CREATE.</span>
+                <span>
+                    To Create Ledge,
+                </span>
+                <span>New</span>
+            </div>
+            <div class="view">
+                <span>CHECK.</span>
+                <span>
+                    To Check Ledge,
+                </span>
+                <span>View</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="tran"></div>
+    <div id="tran2"></div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
